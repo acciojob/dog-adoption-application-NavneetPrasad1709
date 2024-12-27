@@ -8,9 +8,10 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	 <div class="form-container">
+	<div class="form-container">
         <h1>Dog Adoption Form</h1>
-        <form action="/submit-dog-adoption" method="POST">
+        <form action="/submit-adoption" method="POST">
+			
             <!-- Name Input -->
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Name" required>
@@ -24,25 +25,23 @@
             <input type="text" id="address" name="address" placeholder="Address" required>
 
             <!-- Checkbox for Experience -->
-            <label>
-                <input type="checkbox" id="dog_experience" name="dog_experience" value="Have you ever lived with a Dog before?">
+            <label for="dog_experience">
+                <input type="checkbox" id="checkbox" name="dog_experience" value="Have you ever lived with a Dog before?">
                 Have you ever lived with a Dog before?
             </label>
 
             <!-- Multi-select for Preferred Breeds -->
             <label for="breeds">Please select your preferred breeds:</label>
-            <select id="breeds" name="breeds[]" multiple required>
+            <select id="multiSelect" name="breeds[]" multiple required>
                 <option value="labrador">Labrador</option>
                 <option value="german_shepherd">German Shepherd</option>
                 <option value="golden_retriever">Golden Retriever</option>
-                <option value="bulldog">Bulldog</option>
-                <option value="beagle">Beagle</option>
+                
             </select>
 
             <!-- Submit Button -->
-            <button type="submit">Submit</button>
+            <input type="submit" value="Submit">
         </form>
-    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
